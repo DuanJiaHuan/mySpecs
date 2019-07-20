@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
 
   # ――― subspec ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.subspec 'DJHNetworking' do |ss|
-    ss.dependency 'AFNetworking' #依赖其他层级时使用的是层级路径
+    ss.dependency 'AFNetworking', '3.2.1' #依赖其他层级时使用的是层级路径
     ss.source_files = 'DJHCommonCore/Classes/DJHNetworking'
     ss.public_header_files = 'DJHCommonCore/Classes/DJHNetworking/*.h'
   end
